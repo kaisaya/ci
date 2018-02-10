@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+       
 </head>
 
 <body>
@@ -22,11 +23,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
+                    <i class="fas fa-home"></i>
+                   
                         <a class="nav-link" href="/">หน้าแรก
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
+                    <i class="fas fa-user"></i>
                         <a class="nav-link" href="/user">ผู้ใช้งาน</a>
                     </li>
                     <li class="nav-item">
