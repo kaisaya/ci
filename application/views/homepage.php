@@ -39,18 +39,29 @@
                    <div class="card-header">
                        เข้าสู่ระบบ
                    </div>
-                   <div class="card-body">
-                   <p>สวัสดี, บุคคลทั่วไป</p>
-                       <form action="auth/login"method="post">
+                   <div class="card-body"> <?php
+                       if ($this->session->has_userdata('user_id')) {
+                           ?>
+                           <p>สวัสดี, <?php echo $this->session->userdata('fullname') ?></p>
+                           <p><a href="/auth/logout">ออกจากระบบ</a></p>
+                           <?php
+                       } else {
+                           ?>
+                       <p>สวัสดี, บุคคลทั่วไป</p>
+                       <form action="/auth/login" method="post">
                            <div class="form-group">
                                <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้">
                            </div>
                            <div class="form-group">
                                <input type="password" name="password" class="form-control" placeholder="รหัสผ่าน">
                            </div>
-                           <p><a href="#"><i class="fa fa-user"></i> สมัครสมาชิก</a></p>
-                           <button type="submit" class="btn btn-primary">บันทึก</button>
+                           <p><a href="#"> สมัครสมาชิก</a></p>
+                           <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
                        </form>
+                      <?php
+                       }
+                   ?>
+
                    </div>
                </div>
            </div>
