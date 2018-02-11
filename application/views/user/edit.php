@@ -1,5 +1,15 @@
 <form action="/user/update/<?php echo $user->user_id ?>" method="post">
+
+
+<div class="form-group">
+                       <label>ชื่อผู้ใช้</label>
+                       <input value="<?php echo $user->fullname ?>" name="username" type="text" class="form-control" placeholder="ชื่อผู้ใช้">
+                   </div>
                    <div class="form-group">
+                       <label>รหัสผ่าน</label>
+                       <input value="<?php echo $user->fullname ?>" name="password" type="text" class="form-control" placeholder="รหัสผ่าน">
+                   </div>
+                 <div class="form-group">
                        <label>ชื่อ</label>
                        <input value="<?php echo $user->fullname ?>" name="fullname" type="text" class="form-control" placeholder="กรอกชื่อ สกุล">
                    </div>

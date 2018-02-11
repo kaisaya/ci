@@ -35,6 +35,14 @@ public function show($userID = "")
         $this->load->view('user/show', $data);
         $this->load->view('layout/footer');
 }
+
+public function profile()
+{
+    echo " U are now login ";
+}
+
+
+
 public function edit($userID = "")
 {
     $user=$this->user_model->getUserByID($userID);
